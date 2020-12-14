@@ -46,3 +46,8 @@ img {
   margin: 0 auto;
   width: 25%;
 }
+
+input{
+  display: block;
+  margin: 0 auto;
+}
