@@ -48,6 +48,12 @@ img {
 }
 
 input{
-  display: block;
+  /* display: block; */
   margin: 0 auto;
+}
+
+.error-output{
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
 }
