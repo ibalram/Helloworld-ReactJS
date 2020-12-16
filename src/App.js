@@ -16,13 +16,7 @@ class App extends React.Component{
   }
   onNameChange = (event) => {
     console.log("value is ", event.target.value);
-    const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
-    this.setState({userName: event.target.value})
-    if (nameRegex.test(event.target.value)){
-      this.setState({nameError:''})
-    }else{
-      this.setState({nameError: 'Name is Incorrect'})
-    }
+    this.setState({userName: event.target.value});
   }
   render(){
     return (
@@ -32,9 +26,8 @@ class App extends React.Component{
           <img src={logo} onClick = {this.onClick}
             alt="The Bridgelabz logo: a Bridge to Employment through lab works"></img>
         </div>
-        <div>
+        <div className="text-box">
           <input onChange={this.onNameChange}></input>
-          <span className="error-output">{this.state.nameError}</span>
         </div>
       </>
     );

@@ -47,9 +47,9 @@ img {
   width: 25%;
 }
 
-input{
-  /* display: block; */
-  margin: 0 auto;
+.text-box{
+  display: flex;
+  justify-content: center;
 }
 
 .error-output{
